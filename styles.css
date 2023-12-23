@@ -5,3 +5,67 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body{
+    max-width: 500px;
+    margin: auto;
+}
+
+#navigation{
+    max-width: 500px;
+    /* background-color: green; */
+    display: grid;
+    gap: 10px;
+    grid-template-columns: minmax(0,1fr) 40px;
+    margin-top: 1em;
+}
+
+#search_button{
+    width: 100%;
+    grid-column-start: 1; 
+    display: flex;
+    /* background-color: pink; */
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 40px;
+    box-shadow: 0px 8px 15px 0px #2b2b2b40;
+    border: none;
+}
+
+#search_icon{
+    padding: 1.3em;
+    
+    /* background-color: blue; */
+}
+
+#search_label{
+    margin: 0 px;
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+}
+
+#search_heading{
+    /* background-color: yellow; */
+    font-weight: 600;
+}
+
+#search_subheading{
+    font-size: 0.9em;
+    color: rgb(118, 118, 118);
+}
+
+.search_labels{
+    align-self: flex-start;
+    letter-spacing: 0.02em;
+}
+
+#magnifying-glass{
+    font-size: 1.5em;
+}
+
+#filter_button{
+    
+
+}
+
