@@ -14,6 +14,8 @@ button{
     background-color: white;
 }
 
+/* NAVIGATION  */
+
 #navigation{
     max-width: 500px;
     /* background-color: green; */
@@ -78,4 +80,8 @@ button{
 
 }
 
+.img_box > img {
+    width: 500px;
+    object-fit: cover;
+}
 
