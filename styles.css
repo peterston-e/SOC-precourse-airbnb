@@ -5,12 +5,23 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+:root{
+    --body-padding: 24px;
+}
+
 body{
-   padding: 0 20px;
+   padding: 0 var(--body-padding);
     
 }
 button{
     background-color: white;
+}
+
+ul {
+    list-style-type: none;
+    line-height: 1.4em;
+    font-size: 0.9em;
+    color: rgb(118, 118, 118);
 }
 
 /* NAVIGATION  */
@@ -125,4 +136,34 @@ button{
     border-radius: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.9em;
+}
+
+.host_offering{
+    margin-top: 15px;
+    position: relative;
+}
+
+.host_offering li:first-child{
+    font-weight: 600;
+    color: black;
+}
+
+.host_offering li:last-child{
+    position: absolute;
+    right: 0;
+    top: 0;   
+}
+
+.host_offering li:nth-child(4){
+    text-decoration: underline;
+}
+
+.fa-star{
+    color: black;
+}
+
+#price{
+    line-height: 2.2em;
+    color: black;
+    font-weight: 600;
 }
