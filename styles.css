@@ -203,6 +203,11 @@ ul {
   font-size: 0.9em;
 }
 
+/* hack but it works for now */
+.img_label_hidden {
+  z-index: -20;
+}
+
 .host_offering {
   margin-top: 15px;
   position: relative;
