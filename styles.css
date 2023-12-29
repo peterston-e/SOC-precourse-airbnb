@@ -161,6 +161,9 @@ ul {
 }
 
 /* ACCOMMODATION CARD */
+.card_container {
+  margin: 10px 0 50px 0;
+}
 
 .img_box {
   width: 100%;
