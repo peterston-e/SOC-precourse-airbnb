@@ -200,6 +200,27 @@ ul {
   padding: 3px;
 }
 
+.footer_nav_map_button {
+  position: absolute;
+  top: -60px;
+  padding: 13px 21px;
+  border-radius: 24px;
+  color: white;
+  background: #222;
+  border: none;
+  font-size: 0.8em;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+.footer_nav_map_button:hover {
+  transform: scale(1.04);
+}
+
+#map_icon {
+  margin-left: 3px;
+}
+
 /* ******* ACCOMMODATION CARD ******* */
 .card_container {
   margin: 10px 0 50px 0;
