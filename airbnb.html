@@ -175,7 +175,7 @@
       </div>
 
       <!-- *** NAV FOTTER *** -->
-      <div id="footer_nav">
+      <div class="footer_nav">
         <a href="#" type="button" class="footer_nav_button">
           <div class="footer_nav_icon">
             <i class="fa-solid fa-magnifying-glass"></i>
@@ -462,5 +462,23 @@
         </div>
       </div>
     </section>
+
+    <!-- enable hidden navbar -->
+    <script>
+      {
+        const nav = document.querySelector(".footer_nav");
+        let lastScrollY = window.scrollY;
+
+        window.addEventListener("scroll", () => {
+          if (lastScrollY < window.scrollY) {
+            nav.classList.add("footer_nav_hidden");
+          } else {
+            nav.classList.remove("footer_nav_hidden");
+          }
+
+          lastScrollY = window.scrollY;
+        });
+      }
+    </script>
   </body>
 </html>
