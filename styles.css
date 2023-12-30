@@ -98,6 +98,7 @@ ul {
   grid-auto-flow: column;
   gap: 16px;
   overflow-x: auto;
+  /* stops scrolling past end point */
   overscroll-behavior-inline: contain;
   margin-bottom: 8px;
   grid-column: span 2;
