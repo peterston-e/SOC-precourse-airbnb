@@ -10,6 +10,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
   </head>
   <body>
     <!-- ********** NAVIGATION ********** -->
@@ -463,22 +464,8 @@
       </div>
     </section>
 
-    <!-- enable hidden navbar -->
-    <script>
-      {
-        const nav = document.querySelector(".footer_nav");
-        let lastScrollY = window.scrollY;
-
-        window.addEventListener("scroll", () => {
-          if (lastScrollY < window.scrollY) {
-            nav.classList.add("footer_nav_hidden");
-          } else {
-            nav.classList.remove("footer_nav_hidden");
-          }
-
-          lastScrollY = window.scrollY;
-        });
-      }
+    <script src="script.js">
+      //enables hidden footer navbar
     </script>
   </body>
 </html>
