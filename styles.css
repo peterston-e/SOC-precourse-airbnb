@@ -9,10 +9,13 @@
   --body-padding: 24px;
   --neg-body-padding: -24px;
   --main-font-size: 0.9em;
+  --body-padding-bottom: 64px;
+  --neg-body-padding_bottom: 64px;
 }
 
 body {
   padding: 0 var(--body-padding);
+  padding-bottom: var(--body-padding-bottom);
 }
 button {
   background-color: white;
@@ -161,7 +164,75 @@ ul {
   white-space: nowrap;
 }
 
-/* ACCOMMODATION CARD */
+/* ******** FOOTER NAVIGATION ******** */
+.footer_nav {
+  display: flex;
+  justify-content: center;
+  grid-column: span 2;
+  position: fixed;
+  border: 1px solid #ebebeb;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  margin-left: var(--neg-body-padding);
+  background-color: white;
+  z-index: 1000;
+  transition: transform 0.5s;
+  transition-delay: 1s;
+}
+
+.footer_nav_hidden {
+  transform: translateY(var(--body-padding-bottom));
+}
+
+.footer_nav_button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  text-decoration: none;
+  color: #717171;
+}
+
+.footer_nav_button:focus {
+  color: #e81948;
+}
+
+.footer_nav_button_label {
+  font-size: 0.6em;
+  line-height: 0.75em;
+}
+
+.footer_nav_icon {
+  font-size: 1.5em;
+  margin-bottom: 2px;
+  padding: 3px;
+}
+
+.footer_nav_map_button {
+  position: absolute;
+  top: -60px;
+  padding: 13px 21px;
+  border-radius: 24px;
+  color: white;
+  background: #222;
+  border: none;
+  font-size: 0.8em;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+.footer_nav_map_button:hover {
+  transform: scale(1.04);
+  -webkit-box-shadow: 0px 6px 5px 0px rgba(14, 14, 14, 0.19);
+  box-shadow: 0px 6px 5px 0px rgba(14, 14, 14, 0.19);
+}
+
+#map_icon {
+  margin-left: 3px;
+}
+
+/* ******* ACCOMMODATION CARD ******* */
 .card_container {
   margin: 10px 0 50px 0;
 }
