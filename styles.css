@@ -341,3 +341,47 @@ ul {
 .call_to_action_button > button:hover {
   background: #000;
 }
+
+#inspiration_section {
+  padding: 48px 0;
+}
+
+.inspiration_section_nav_scroller {
+  display: grid;
+  gap: 4px;
+  grid-auto-flow: column;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  margin-right: var(--neg-body-padding);
+}
+
+.inspiration_section_nav_scroller::-webkit-scrollbar {
+  display: none;
+}
+
+.inspiration_section_nav_scroller {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.inspiration_nav_button {
+  border: none;
+  margin: 6px 6px 6px -10px;
+  padding: 10px;
+  background: transparent;
+  font-size: 15px;
+  letter-spacing: 0.05;
+  color: #717171;
+  white-space: nowrap;
+}
+
+/* hides scroll for chrome, safari opera */
+/* #nav_scroller::-webkit-scrollbar {
+  display: none;
+} */
+
+/* hides scroll for IE and firefox */
+/* #nav_scroller {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+} */
