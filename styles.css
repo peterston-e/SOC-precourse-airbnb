@@ -362,6 +362,10 @@ ul {
   margin-right: var(--neg-body-padding);
 }
 
+.inspiration_nav_button:last-child {
+  margin-right: var(--body-padding);
+}
+
 .inspiration_section_nav_scroller::-webkit-scrollbar {
   display: none;
 }
