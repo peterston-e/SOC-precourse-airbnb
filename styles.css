@@ -50,6 +50,7 @@ ul {
   -moz-box-shadow: 0px 8px 15px 0px #2b2b2b40;
   -webkit-box-shadow: 0px 8px 15px 0px #2b2b2b40;
   border: none;
+  cursor: pointer;
 }
 
 #search_icon {
@@ -91,6 +92,7 @@ ul {
   padding: 0.7em;
   margin-top: 5px;
   border: 1px solid rgb(164, 164, 164);
+  cursor: pointer;
 }
 
 /* ******* NAV SCROLLER ********* */
@@ -316,6 +318,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 32px;
 }
 
 .call_to_action_text {
@@ -338,4 +341,75 @@ ul {
 
 .call_to_action_button > button:hover {
   background: #000;
+}
+
+#inspiration_section {
+  padding: 48px var(--body-padding);
+  background: #f7f7f7;
+  margin: 0 var(--neg-body-padding);
+}
+
+.inspiration_section_nav_heading {
+  font-weight: 500;
+}
+
+.inspiration_section_nav_scroller {
+  display: grid;
+  gap: 30px;
+  grid-auto-flow: column;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  margin-right: var(--neg-body-padding);
+}
+
+.inspiration_section_nav_scroller::-webkit-scrollbar {
+  display: none;
+}
+
+.inspiration_section_nav_scroller {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.inspiration_nav_button {
+  border: none;
+  margin: 6px 6px 0px 0;
+  padding: 10px 0 16px 0;
+  background: transparent;
+  font-size: 15px;
+  letter-spacing: 0.05;
+  color: #717171;
+  white-space: nowrap;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+.inspiration_nav_button:focus {
+  border-bottom: 2px solid #222;
+  color: #222;
+}
+
+.seperator_line {
+  height: 1px;
+  background-color: #ddd;
+}
+
+.inspiration_link_list {
+  padding-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 8px;
+  row-gap: 24px;
+}
+
+.inspiration_link_ancor {
+  text-decoration: none;
+  color: #717171;
+  display: flex;
+  flex-direction: column;
+}
+
+.inspiration_location {
+  color: #222;
+  font-weight: 600;
 }
