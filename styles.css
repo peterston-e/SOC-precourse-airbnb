@@ -394,13 +394,22 @@ ul {
   background-color: #ddd;
 }
 
-/* hides scroll for chrome, safari opera */
-/* #nav_scroller::-webkit-scrollbar {
-  display: none;
-} */
+.inspiration_link_list {
+  padding-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 8px;
+  row-gap: 24px;
+}
 
-/* hides scroll for IE and firefox */
-/* #nav_scroller {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-} */
+.inspiration_link_ancor {
+  text-decoration: none;
+  color: #717171;
+  display: flex;
+  flex-direction: column;
+}
+
+.inspiration_location {
+  color: #222;
+  font-weight: 600;
+}
