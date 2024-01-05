@@ -474,6 +474,4 @@ ul {
 .footer_final_links {
   display: flex;
   margin: 8px 0;
-  flex-wrap: wrap;
-  line-height: 1.8;
 }
