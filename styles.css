@@ -35,12 +35,14 @@ ul {
 /* NAVIGATION  */
 
 #navigation {
-  /* max-width: 500px; */
-  /* background-color: green; */
   display: grid;
   gap: 10px;
   grid-template-columns: minmax(0, 1fr) 40px;
   margin-top: 1em;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #fff;
 }
 
 #search_button {
@@ -109,13 +111,13 @@ ul {
   overflow-x: auto;
   /* stops scrolling past end point */
   overscroll-behavior-inline: contain;
-  margin-bottom: 8px;
+  /* margin-bottom: 8px; */
   grid-column: span 2;
   font-size: 0.9em;
   padding: 4px 4px 0px 4px;
   margin-right: var(--neg-body-padding);
   margin-left: var(--neg-body-padding);
-  margin-bottom: var(--body-padding);
+  /* margin-bottom: var(--body-padding); */
   box-shadow: 0px 4px 3px 0px #bfbebe36;
 }
 
@@ -237,6 +239,10 @@ ul {
 }
 
 /* ******* ACCOMMODATION CARD ******* */
+.card_container:first-child {
+  margin-top: var(--body-padding);
+}
+
 .card_container {
   margin: 10px 0 50px 0;
 }
