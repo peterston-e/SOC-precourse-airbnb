@@ -329,7 +329,7 @@ ul {
   font-weight: 600;
 }
 
-#call_to_action {
+.call_to_action {
   display: flex;
   flex-direction: column;
   align-items: center;
