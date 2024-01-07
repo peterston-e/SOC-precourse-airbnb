@@ -358,7 +358,7 @@ ul {
   background: #000;
 }
 
-#inspiration_section {
+.inspiration_section {
   padding: 48px var(--body-padding);
   background: #f7f7f7;
   margin: 0 var(--neg-body-padding);
