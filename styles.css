@@ -105,7 +105,7 @@ ul {
 
 /* ******* NAV SCROLLER ********* */
 
-#nav_scroller {
+.nav_scroller {
   display: grid;
   grid-auto-flow: column;
   gap: 16px;
@@ -123,12 +123,12 @@ ul {
 }
 
 /* hides scroll for chrome, safari opera */
-#nav_scroller::-webkit-scrollbar {
+.nav_scroller::-webkit-scrollbar {
   display: none;
 }
 
 /* hides scroll for IE and firefox */
-#nav_scroller {
+.nav_scroller {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -147,6 +147,8 @@ ul {
   transition: all 200ms ease-in-out;
   border-bottom: 2px solid transparent;
   opacity: 0.64;
+  width: max-content;
+  min-width: 50px;
 }
 
 .menu_item:focus {
