@@ -288,6 +288,7 @@ ul {
   margin: 0 12px;
   background-color: #ffffffe9;
   cursor: pointer;
+
   transition: all 0.25s ease-in-out;
   z-index: 10;
 }
