@@ -262,6 +262,22 @@ ul {
   border-radius: 12px;
 }
 
+.carousel-button-container {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.carousel-button {
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+}
+
 .label_container {
   padding: 15px;
   width: 100%;
