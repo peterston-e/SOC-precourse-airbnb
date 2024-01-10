@@ -298,6 +298,35 @@ ul {
   transform: scale(1.04);
 }
 
+.dots-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 4px;
+  position: absolute;
+  bottom: 12px;
+}
+
+.dots-container > span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  z-index: 300;
+  background-color: #ffffff94;
+}
+
+.dots-container > span:nth-of-type(2) {
+  background-color: #fff;
+}
+
+.dots-container > span:nth-last-of-type(2) {
+  transform: scale(0.85);
+}
+
+.dots-container > span:last-of-type {
+  transform: scale(0.65);
+}
+
 .label_container {
   padding: 15px;
   width: 100%;
