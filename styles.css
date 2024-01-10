@@ -269,6 +269,15 @@ ul {
   width: 100%;
   height: 100%;
   align-items: center;
+  z-index: 200;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.2s linear;
+}
+
+.carousel-button-container:hover {
+  visibility: visible;
+  opacity: 1;
 }
 
 .carousel-button {
