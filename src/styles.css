@@ -23,6 +23,11 @@ body {
   font-size: 1.4em;
 }
 
+/* for testing post css */
+input::placeholder {
+  color: #e81948;
+}
+
 button {
   background-color: white;
 }
@@ -337,7 +342,7 @@ ul {
   display: flex;
   justify-content: space-between;
   /* stops flex items expanding to fill cross axis */
-  align-items: start;
+  align-items: flex-start;
 }
 
 .heart_icon {
