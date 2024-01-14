@@ -18,7 +18,9 @@ html {
 }
 
 body {
+  padding: 0 24px;
   padding: 0 var(--body-padding);
+  padding-bottom: 64px;
   padding-bottom: var(--body-padding-bottom);
   font-size: 1.4em;
 }
@@ -45,6 +47,7 @@ ul {
 
 .navigation {
   display: grid;
+  grid-gap: 10px;
   gap: 10px;
   grid-template-columns: minmax(0, 1fr) 40px;
   padding-top: 1em;
@@ -61,7 +64,7 @@ ul {
   justify-content: flex-start;
   align-items: center;
   border-radius: 40px;
-  box-shadow: 0px 4px 10px 0px #2b2b2b30;
+  box-shadow: 0px 4px 10px 0px rgba(43,43,43,0.18824);
   border: none;
   cursor: pointer;
 }
@@ -115,18 +118,21 @@ ul {
 .nav_scroller {
   display: grid;
   grid-auto-flow: column;
+  grid-gap: 16px;
   gap: 16px;
   overflow-x: auto;
   /* stops scrolling past end point */
-  overscroll-behavior-inline: contain;
+  overscroll-behavior-x: contain;
   /* margin-bottom: 8px; */
   grid-column: span 2;
   font-size: 0.9em;
   padding: 4px 4px 0px 0px;
+  margin-right: -24px;
   margin-right: var(--neg-body-padding);
+  margin-left: -24px;
   margin-left: var(--neg-body-padding);
   /* margin-bottom: var(--body-padding); */
-  box-shadow: 0px 4px 3px 0px #bfbebe36;
+  box-shadow: 0px 4px 3px 0px rgba(191,190,190,0.21176);
 }
 
 /* hides scroll for chrome, safari opera */
@@ -142,6 +148,7 @@ ul {
 
 /* aligns scrollbar with body padding on load */
 .menu_item:first-child {
+  margin-left: 24px;
   margin-left: var(--body-padding);
 }
 
@@ -190,6 +197,7 @@ ul {
   bottom: 0;
   width: 100%;
   padding: 10px;
+  margin-left: -24px;
   margin-left: var(--neg-body-padding);
   background-color: white;
   z-index: 1000;
@@ -199,6 +207,7 @@ ul {
 
 /* class added when scroll down detected (js script) */
 .footer_nav_hidden {
+  transform: translateY(64px);
   transform: translateY(var(--body-padding-bottom));
 }
 
@@ -207,6 +216,7 @@ ul {
   flex-direction: column;
   align-items: center;
   width: 20%;
+  -webkit-text-decoration: none;
   text-decoration: none;
   color: #717171;
 }
@@ -242,7 +252,7 @@ ul {
 
 .footer_nav_map_button:hover {
   transform: scale(1.04);
-  box-shadow: 0px 6px 5px 0px #0e0e0e30;
+  box-shadow: 0px 6px 5px 0px rgba(14,14,14,0.18824);
 }
 
 .map_icon {
@@ -251,6 +261,7 @@ ul {
 
 /* ******* ACCOMMODATION CARD ******* */
 .card_container:first-child {
+  margin-top: 24px;
   margin-top: var(--body-padding);
 }
 
@@ -297,7 +308,7 @@ ul {
   border: none;
   border-radius: 50%;
   margin: 0 12px;
-  background-color: #ffffffe9;
+  background-color: rgba(255,255,255,0.91373);
   cursor: pointer;
   line-height: 0;
   transition: all 0.25s ease-in-out;
@@ -324,7 +335,7 @@ ul {
   height: 6px;
   border-radius: 50%;
   z-index: 300;
-  background-color: #ffffff94;
+  background-color: rgba(255,255,255,0.58039);
 }
 
 .dots-container > span:nth-of-type(2) {
@@ -393,6 +404,7 @@ ul {
 }
 
 .host_offering li:nth-child(4) {
+  -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
@@ -436,8 +448,10 @@ ul {
 }
 
 .inspiration_section {
+  padding: 48px 24px;
   padding: 48px var(--body-padding);
   background: #f7f7f7;
+  margin: 0 -24px;
   margin: 0 var(--neg-body-padding);
 }
 
@@ -447,14 +461,17 @@ ul {
 
 .inspiration_section_nav_scroller {
   display: grid;
+  grid-gap: 30px;
   gap: 30px;
   grid-auto-flow: column;
   overflow-x: auto;
-  overscroll-behavior-inline: contain;
+  overscroll-behavior-x: contain;
+  margin-right: -24px;
   margin-right: var(--neg-body-padding);
 }
 
 .inspiration_nav_button:last-child {
+  margin-right: 24px;
   margin-right: var(--body-padding);
 }
 
@@ -502,13 +519,16 @@ ul {
   padding-top: 32px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 8px;
   -moz-column-gap: 8px;
        column-gap: 8px;
+  grid-row-gap: 24px;
   row-gap: 24px;
 }
 
 .inspiration_link_ancor,
 .footer_link_anchor {
+  -webkit-text-decoration: none;
   text-decoration: none;
   color: #717171;
   display: flex;
@@ -527,12 +547,15 @@ ul {
 
 .footer_link_list {
   display: grid;
+  grid-gap: 12px;
   gap: 12px;
 }
 
 .footer_links {
   background: #f7f7f7;
+  margin: 0 -24px;
   margin: 0 var(--neg-body-padding);
+  padding: 0 24px;
   padding: 0 var(--body-padding);
 }
 
