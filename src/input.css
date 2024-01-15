@@ -158,6 +158,10 @@ ul {
   margin-left: var(--body-padding);
 }
 
+.menu_item:last-child {
+  margin-right: var(--body-padding);
+}
+
 .menu_item:focus {
   border-bottom: 2px solid #222;
   opacity: 1;
