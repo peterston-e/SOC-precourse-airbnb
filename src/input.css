@@ -134,6 +134,7 @@ ul {
 }
 
 /* hides scroll for IE and firefox */
+/* stylelint-disable-next-line no-duplicate-selectors */
 .nav_scroller {
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -453,14 +454,11 @@ ul {
   margin-right: var(--neg-body-padding);
 }
 
-.inspiration_nav_button:last-child {
-  margin-right: var(--body-padding);
-}
-
 .inspiration_section_nav_scroller::-webkit-scrollbar {
   display: none;
 }
 
+/* stylelint-disable-next-line no-duplicate-selectors */
 .inspiration_section_nav_scroller {
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -476,6 +474,10 @@ ul {
   white-space: nowrap;
   cursor: pointer;
   border-bottom: 2px solid transparent;
+}
+
+.inspiration_nav_button:last-child {
+  margin-right: var(--body-padding);
 }
 
 .inspiration_nav_button:focus {
@@ -533,12 +535,6 @@ ul {
   padding: 0 var(--body-padding);
 }
 
-.footer_final_links:last-child {
-  /* allows space for footer nav */
-  margin-bottom: -64px;
-  padding: 0 0 64px;
-}
-
 .site_country-setting {
   margin-bottom: 22px;
 }
@@ -551,6 +547,7 @@ ul {
   display: flex;
 }
 
+/* stylelint-disable-next-line no-descending-specificity */
 .footer_link_item > span {
   padding: 0 8px;
 }
@@ -558,4 +555,10 @@ ul {
 .footer_final_links {
   display: flex;
   margin: 8px 0;
+}
+
+.footer_final_links:last-child {
+  /* allows space for footer nav */
+  margin-bottom: -64px;
+  padding: 0 0 64px;
 }

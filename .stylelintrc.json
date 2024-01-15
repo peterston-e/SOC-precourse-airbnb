@@ -6,6 +6,7 @@
         "selector-class-pattern": "[a-zA-Z]+(_[a-zA-Z]+)*"
     },
     "ignoreFiles": [
-        "dist/autoprefix.css"
+        "dist/autoprefix.css",
+        "dist/style.css"
     ]
 }
