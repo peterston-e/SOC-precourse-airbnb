@@ -6,6 +6,7 @@
 
 html {
   font-family: Arial, Helvetica, sans-serif;
+
   /* makes font 10px so em easily translates to px */
   font-size: 62.5%;
 }
@@ -35,11 +36,10 @@ button {
 ul {
   list-style-type: none;
   line-height: 1.5em;
-  color: rgb(118, 118, 118);
+  color: rgb(118 118 118);
 }
 
 /* NAVIGATION  */
-
 .navigation {
   display: grid;
   gap: 10px;
@@ -47,7 +47,7 @@ ul {
   padding-top: 1em;
   position: sticky;
   top: 0;
-  z-index: 101;
+  z-index: 100000;
   background: #fff;
 }
 
@@ -58,7 +58,7 @@ ul {
   justify-content: flex-start;
   align-items: center;
   border-radius: 40px;
-  box-shadow: 0px 4px 10px 0px #2b2b2b30;
+  box-shadow: 0 4px 10px 0 #2b2b2b30;
   border: none;
   cursor: pointer;
 }
@@ -68,7 +68,6 @@ ul {
 }
 
 .search_label {
-  margin: 0 px;
   display: flex;
   flex-direction: column;
   margin: 1em 0;
@@ -114,16 +113,19 @@ ul {
   grid-auto-flow: column;
   gap: 16px;
   overflow-x: auto;
+
   /* stops scrolling past end point */
   overscroll-behavior-inline: contain;
+
   /* margin-bottom: 8px; */
   grid-column: span 2;
   font-size: 0.9em;
-  padding: 4px 4px 0px 0px;
+  padding: 4px 4px 0 0;
   margin-right: var(--neg-body-padding);
   margin-left: var(--neg-body-padding);
+
   /* margin-bottom: var(--body-padding); */
-  box-shadow: 0px 4px 3px 0px #bfbebe36;
+  box-shadow: 0 4px 3px 0 #bfbebe36;
 }
 
 /* hides scroll for chrome, safari opera */
@@ -137,11 +139,6 @@ ul {
   scrollbar-width: none;
 }
 
-/* aligns scrollbar with body padding on load */
-.menu_item:first-child {
-  margin-left: var(--body-padding);
-}
-
 .menu_item {
   padding-bottom: 14px;
   display: flex;
@@ -153,6 +150,11 @@ ul {
   opacity: 0.64;
   width: max-content;
   min-width: 50px;
+}
+
+/* aligns scrollbar with body padding on load */
+.menu_item:first-child {
+  margin-left: var(--body-padding);
 }
 
 .menu_item:focus {
@@ -238,11 +240,15 @@ ul {
 
 .footer_nav_map_button:hover {
   transform: scale(1.04);
-  box-shadow: 0px 6px 5px 0px #0e0e0e30;
+  box-shadow: 0 6px 5px 0 #0e0e0e30;
 }
 
 .map_icon {
   margin-left: 3px;
+}
+
+.card_container {
+  margin: 10px 0 50px;
 }
 
 /* ******* ACCOMMODATION CARD ******* */
@@ -250,13 +256,10 @@ ul {
   margin-top: var(--body-padding);
 }
 
-.card_container {
-  margin: 10px 0 50px 0;
-}
-
 .img_box {
   width: 100%;
-  /* creats square image sort of like Airbnb does */
+
+  /* creates square image sort of like Airbnb does */
   height: calc(100vw - 40px);
   position: relative;
 }
@@ -301,7 +304,6 @@ ul {
 
 .carousel-button:hover {
   background-color: #fff;
-
   transform: scale(1.04);
 }
 
@@ -341,18 +343,20 @@ ul {
   position: absolute;
   display: flex;
   justify-content: space-between;
+
   /* stops flex items expanding to fill cross axis */
   align-items: flex-start;
 }
 
 .heart_icon {
   background-color: transparent;
-  color: rgba(0, 0, 0, 0.575);
+  color: rgb(0 0 0 / 57.5%);
   font-size: 1.5em;
   align-self: baseline;
   border: none;
   stroke: #fff;
   stroke-width: 1px;
+
   /* bit of a hack because alignment off */
   margin-top: 6px;
 }
@@ -360,7 +364,7 @@ ul {
 .img_label {
   padding: 6px 12px;
   background-color: white;
-  border: 1px solid rgb(216, 216, 216);
+  border: 1px solid rgb(216 216 216);
   border-radius: 20px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
@@ -464,8 +468,8 @@ ul {
 
 .inspiration_nav_button {
   border: none;
-  margin: 6px 6px 0px 0;
-  padding: 10px 0 16px 0;
+  margin: 6px 6px 0 0;
+  padding: 10px 0 16px;
   background: transparent;
   letter-spacing: 0.02em;
   color: #717171;
@@ -479,17 +483,17 @@ ul {
   color: #222;
 }
 
-.seperator_line {
+.separator_line {
   height: 1px;
   background-color: #ddd;
   margin: 24px 0;
 }
 
-.top_seperator {
+.top_separator {
   margin-top: 0;
 }
 
-.seperator_line:nth-of-type(1) {
+.separator_line:nth-of-type(1) {
   margin-top: 0;
 }
 
@@ -497,11 +501,10 @@ ul {
   padding-top: 32px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 8px;
-  row-gap: 24px;
+  gap: 24px 8px;
 }
 
-.inspiration_link_ancor,
+.inspiration_link_anchor,
 .footer_link_anchor {
   text-decoration: none;
   color: #717171;
@@ -533,7 +536,7 @@ ul {
 .footer_final_links:last-child {
   /* allows space for footer nav */
   margin-bottom: -64px;
-  padding: 0 0 64px 0;
+  padding: 0 0 64px;
 }
 
 .site_country-setting {
