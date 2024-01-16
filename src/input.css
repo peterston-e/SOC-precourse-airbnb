@@ -559,10 +559,15 @@ ul {
 .footer_final_links {
   display: flex;
   margin: 8px 0;
+  flex-wrap: wrap;
 }
 
 .footer_final_links:last-child {
   /* allows space for footer nav */
   margin-bottom: -64px;
   padding: 0 0 64px;
+}
+
+.footer_link_anchor {
+  white-space: nowrap;
 }
