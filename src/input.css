@@ -557,12 +557,14 @@ ul {
 /* stylelint-disable-next-line no-descending-specificity */
 .footer_link_item > span {
   padding: 0 8px;
+  align-self: center;
 }
 
 .footer_final_links {
   display: flex;
   margin: 8px 0;
   flex-wrap: wrap;
+  align-items: baseline;
 }
 
 .footer_final_links:last-child {
@@ -573,4 +575,8 @@ ul {
 
 .footer_link_anchor {
   white-space: nowrap;
+}
+
+.last-links {
+  line-height: 2em;
 }
