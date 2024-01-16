@@ -52,6 +52,9 @@ ul {
   top: 0;
   z-index: 100000;
   background: #fff;
+  margin: 0 var(--neg-body-padding);
+  padding-left: var(--body-padding);
+  padding-right: var(--body-padding);
 }
 
 .search_button {
