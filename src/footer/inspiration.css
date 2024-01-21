@@ -1,0 +1,70 @@
+.inspiration_section {
+  padding: 48px var(--body-padding);
+  background: #f7f7f7;
+  margin: 0 var(--neg-body-padding);
+}
+
+.inspiration_section_nav_heading {
+  font-weight: 500;
+}
+
+.inspiration_section_nav_scroller {
+  display: grid;
+  gap: 30px;
+  grid-auto-flow: column;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  margin-right: var(--neg-body-padding);
+}
+
+.inspiration_section_nav_scroller::-webkit-scrollbar {
+  display: none;
+}
+
+/* stylelint-disable-next-line no-duplicate-selectors */
+.inspiration_section_nav_scroller {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.inspiration_nav_button {
+  border: none;
+  margin: 6px 6px 0 0;
+  padding: 10px 0 16px;
+  background: transparent;
+  letter-spacing: 0.02em;
+  color: #717171;
+  white-space: nowrap;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+.inspiration_nav_button:last-child {
+  margin-right: var(--body-padding);
+}
+
+.inspiration_nav_button:focus {
+  border-bottom: 2px solid #222;
+  color: #222;
+}
+
+.separator_line {
+  height: 1px;
+  background-color: #ddd;
+  margin: 24px 0;
+}
+
+.top_separator {
+  margin-top: 0;
+}
+
+.separator_line:nth-of-type(1) {
+  margin-top: 0;
+}
+
+.inspiration_link_list {
+  padding-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px 8px;
+}

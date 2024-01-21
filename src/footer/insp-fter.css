@@ -1,0 +1,13 @@
+.inspiration_link_anchor,
+.footer_link_anchor {
+  text-decoration: none;
+  color: #717171;
+  display: flex;
+  flex-direction: column;
+}
+
+.inspiration_location,
+.footer_h3 {
+  color: #222;
+  font-weight: 600;
+}

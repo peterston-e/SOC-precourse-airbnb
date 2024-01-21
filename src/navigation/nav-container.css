@@ -1,0 +1,13 @@
+.navigation {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: minmax(0, 1fr) 40px;
+  padding-top: 1em;
+  position: sticky;
+  top: 0;
+  z-index: 100000;
+  background: #fff;
+  margin: 0 var(--neg-body-padding);
+  padding-left: var(--body-padding);
+  padding-right: var(--body-padding);
+}

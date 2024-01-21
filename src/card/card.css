@@ -1,0 +1,156 @@
+.card_container {
+  margin: 10px 0 50px;
+}
+
+.card_container:first-child {
+  margin-top: var(--body-padding);
+}
+
+.img_box {
+  width: 100%;
+
+  /* creates square image sort of like Airbnb does */
+  height: calc(100vw - 40px);
+  position: relative;
+}
+
+.img_box > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.carousel-button-container {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  z-index: 200;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.2s linear;
+}
+
+.carousel-button-container:hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+.carousel-button {
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  margin: 0 12px;
+  background-color: #ffffffe9;
+  cursor: pointer;
+  line-height: 0;
+  transition: all 0.25s ease-in-out;
+  z-index: 10;
+}
+
+.carousel-button:hover {
+  background-color: #fff;
+  transform: scale(1.04);
+}
+
+.dots-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 4px;
+  position: absolute;
+  bottom: 12px;
+}
+
+.dots-container > span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  z-index: 300;
+  background-color: #ffffff94;
+}
+
+.dots-container > span:nth-of-type(2) {
+  background-color: #fff;
+}
+
+.dots-container > span:nth-last-of-type(2) {
+  transform: scale(0.85);
+}
+
+.dots-container > span:last-of-type {
+  transform: scale(0.65);
+}
+
+.label_container {
+  padding: 15px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+
+  /* stops flex items expanding to fill cross axis */
+  align-items: flex-start;
+}
+
+.heart_icon {
+  background-color: transparent;
+  color: rgb(0 0 0 / 57.5%);
+  font-size: 1.5em;
+  align-self: baseline;
+  border: none;
+  stroke: #fff;
+  stroke-width: 1px;
+
+  /* bit of a hack because alignment off */
+  margin-top: 6px;
+}
+
+.img_label {
+  padding: 6px 12px;
+  background-color: white;
+  border: 1px solid rgb(216 216 216);
+  border-radius: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+
+/* hack but it works for now */
+.img_label_hidden {
+  z-index: -20;
+}
+
+.host_offering {
+  margin-top: 15px;
+  position: relative;
+}
+
+.host_offering li:first-child {
+  font-weight: 600;
+  color: #222;
+}
+
+.host_offering li:last-child {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.host_offering li:nth-child(4) {
+  text-decoration: underline;
+}
+
+.fa-star {
+  color: #222;
+}
+
+.price {
+  line-height: 2.4em;
+  color: #222;
+  font-weight: 600;
+}

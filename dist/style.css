@@ -259,11 +259,11 @@ ul {
   margin-left: 3px;
 }
 
+/* ******* ACCOMMODATION CARD ******* */
 .card_container {
   margin: 10px 0 50px;
 }
 
-/* ******* ACCOMMODATION CARD ******* */
 .card_container:first-child {
   margin-top: var(--body-padding);
 }
@@ -418,6 +418,7 @@ ul {
   font-weight: 600;
 }
 
+/* ******** CTA ******** */
 .call_to_action {
   display: flex;
   flex-direction: column;
@@ -447,6 +448,7 @@ ul {
   background: #000;
 }
 
+/* ************ INSPIRATION ************ */
 .inspiration_section {
   padding: 48px var(--body-padding);
   background: #f7f7f7;

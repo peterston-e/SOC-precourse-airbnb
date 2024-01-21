@@ -5,7 +5,7 @@
   "main": "script.js",
   "scripts": {
     "postcss": "postcss src/input.css --output dist/style.css",
-    "postcss-watch": "postcss src/input.css --output dist/style.css --watch"
+    "postcss:watch": "postcss src/input.css --output dist/style.css --watch"
   },
   "keywords": [],
   "author": "",
