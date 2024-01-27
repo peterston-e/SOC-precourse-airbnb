@@ -13,5 +13,6 @@
     "Redrock",
     "Shenandoa",
     "Winchcombe"
-  ]
+  ],
+  "liveServer.settings.port": 5502
 }
