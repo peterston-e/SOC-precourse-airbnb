@@ -13,6 +13,11 @@ To install the project simply download the zip file or clone and all modules and
 
 `npm install`
 
+To run the build command using post css use:
+
+`npm run postcss` for single build.
+`npm run postcss:watch` to continuously watch css.
+
 ## Included dependencies and tech.
 
 **Languages**
