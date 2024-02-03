@@ -24,7 +24,7 @@ body {
   font-size: 1.4em;
 }
 
-/* for testing post css autoprefix */
+/* for testing post css autoprefixer */
 input::placeholder {
   color: #e81948;
 }
