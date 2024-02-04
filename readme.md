@@ -25,7 +25,7 @@ The site uses one small JS script to make the bottom popup menu appear and disap
 
 **Postcss**
 
-After reading the best practice guide, I decided to use npm as a package manager to install postcss to do several jobs, such as:
+I decided to use postcss to do several jobs, such as:
 
 - **Autoprefixer** to automatically add prefixes to CSS.
 - **Postcss import** allowed me to break down my CSS into smaller, more manageable files, import them from various directories and build a single distribution style sheet.
